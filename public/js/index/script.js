@@ -55,27 +55,27 @@ let sliderItemsTitrs = [
 let map = new Map();
 map.set(
   sliderItemsTitrs[0],
-  "https://www.bechtle.com/dam/jcr:af4c3286-9928-4448-a197-8a56025acb05/microsoft365-stage.jpg"
+  "http://127.0.0.1:8000/images/microsoft-stage.jpg"
 );
 map.set(
   sliderItemsTitrs[1],
-  "https://static0.srcdn.com/wordpress/wp-content/uploads/2020/10/PS5-Entertainment-Apps-1.jpg"
+  "http://127.0.0.1:8000/images/entertainment.webp"
 );
 map.set(
   sliderItemsTitrs[2],
-  "https://adsider.com/wp-content/uploads/2021/01/reddit-profiles-cov-1280x720.png"
+  "http://127.0.0.1:8000/images/reddit.png"
 );
 map.set(
   sliderItemsTitrs[3],
-  "https://cdn.stayhappening.com/events5/banners/270f1e406436588a31fc72ba47678d1852d6006e4abb8160d78bcd01cf579467-rimg-w706-h280-gmir.jpg?v=1620414492"
+  "http://127.0.0.1:8000/images/fast.jpg"
 );
 map.set(
   sliderItemsTitrs[4],
-  "https://www.queensjournal.ca/sites/default/files/img/story/2020/10/01/among_us.png"
+  "http://127.0.0.1:8000/images/among-us.png"
 );
 map.set(
   sliderItemsTitrs[5],
-  "http://www.techquila.co.in/wp-content/uploads/2020/05/asphalt-8.jpg"
+  "http://127.0.0.1:8000/images/asphalt-slider.jpg"
 );
 
 sliderLiElement.forEach((value) => {

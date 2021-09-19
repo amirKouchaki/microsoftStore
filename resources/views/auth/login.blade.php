@@ -14,7 +14,7 @@
 
     <main id="container">
         <img
-            src="https://winaero.com/blog/wp-content/uploads/2021/07/Microsoft_Store_icon.png"
+            src="{{asset('/images/microsoft_store_icon.png')}}"
             alt="Logo"
         />
         <h1>Sign in</h1>
@@ -23,9 +23,9 @@
             <section>
                 <input
                     type="text"
-                    name="username"
+                    name="email"
                     id="username"
-                    placeholder="Username"
+                    placeholder="email"
                 />
                 <input
                     type="password"

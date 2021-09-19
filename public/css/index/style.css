@@ -97,7 +97,7 @@ nav .border {
 }
 
 #slide-image {
-    background: center /cover url("https://www.bechtle.com/dam/jcr:af4c3286-9928-4448-a197-8a56025acb05/microsoft365-stage.jpg");
+    background: center /cover url("http://127.0.0.1:8000/images/microsoft-stage.jpg");
     height: 100%;
     position: relative;
     border-top-left-radius: 15px;
@@ -203,31 +203,31 @@ nav .border {
 }
 
 #m365 {
-    background: center /cover url("https://www.bechtle.com/dam/jcr:af4c3286-9928-4448-a197-8a56025acb05/microsoft365-stage.jpg");
+    background: center /cover url("http://127.0.0.1:8000/images/microsoft-stage.jpg");
     border: 5px solid #1d6978;
 }
 
 #entertainment {
-    background: center /cover url("https://static0.srcdn.com/wordpress/wp-content/uploads/2020/10/PS5-Entertainment-Apps-1.jpg");
+    background: center /cover url("http://127.0.0.1:8000/images/entertainment.webp");
 }
 
 #reddit {
-    background: center /cover url("https://adsider.com/wp-content/uploads/2021/01/reddit-profiles-cov-1280x720.png");
+    background: center /cover url("http://127.0.0.1:8000/images/reddit.png");
 
 }
 
 #own-it-today {
-    background: center /cover url("https://cdn.stayhappening.com/events5/banners/270f1e406436588a31fc72ba47678d1852d6006e4abb8160d78bcd01cf579467-rimg-w706-h280-gmir.jpg?v=1620414492");
+    background: center /cover url("http://127.0.0.1:8000/images/fast.jpg");
 
 }
 
 #among-us {
-    background: center /cover url("https://www.queensjournal.ca/sites/default/files/img/story/2020/10/01/among_us.png");
+    background: center /cover url("http://127.0.0.1:8000/images/among-us.png");
 
 }
 
 #racing-game {
-    background: center /cover url("http://www.techquila.co.in/wp-content/uploads/2020/05/asphalt-8.jpg");
+    background: center /cover url("http://127.0.0.1:8000/images/asphalt-slider.jpg");
 
 }
 
@@ -469,11 +469,11 @@ nav .border {
 }
 
 #racing-game0 .image {
-    background: no-repeat center /cover url("https://www.sectionhmstore.com/wp-content/uploads/2019/09/offlinecars-asphalt8-5bf393bb46e0fb002650eb20.jpg");
+    background: no-repeat center /cover url("http://127.0.0.1:8000/images/asphalt-footer.jpg");
 }
 
 #social-media .image {
-    background: no-repeat center /cover url("https://i.pinimg.com/originals/ca/c6/62/cac662718c04bacc58fa1937abc10e24.jpg");
+    background: no-repeat center /cover url("http://127.0.0.1:8000/images/media.jpg");
 }
 
 /* --End-- */

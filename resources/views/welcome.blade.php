@@ -32,12 +32,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="https://img.icons8.com/fluency-systems-regular/30/000000/home.png"
+                        src="{{asset('/images/home-r.png')}}"
                         alt="Home"
                     />
                     <img
                         class="filled-icon"
-                        src="https://img.icons8.com/fluency-systems-filled/30/1d6978/home.png"
+                        src="{{asset('/images/home-f.png')}}"
                         alt="Home"
                     />
                     <span class="nav-link-text">Home</span>
@@ -47,12 +47,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="https://img.icons8.com/fluency-systems-regular/30/000000/apps.png"
+                        src="{{asset('/images/apps-r.png')}}"
                         alt="Apps"
                     />
                     <img
                         class="filled-icon"
-                        src="https://img.icons8.com/fluency-systems-filled/30/1d6978/apps.png"
+                        src="{{asset('/images/apps-f.png')}}"
                         alt="Apps"
                     />
                     <span class="nav-link-text">Apps</span>
@@ -62,12 +62,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="https://img.icons8.com/fluency-systems-regular/30/000000/controller.png"
+                        src="{{asset('/images/controller-r.png')}}"
                         alt="Gaming"
                     />
                     <img
                         class="filled-icon"
-                        src="https://img.icons8.com/fluency-systems-filled/30/1d6978/controller.png"
+                        src="{{asset('/images/controller-f.png')}}"
                         alt="Gaming"
                     />
                     <span class="nav-link-text">Gaming</span>
@@ -77,12 +77,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="https://img.icons8.com/fluency-systems-regular/30/000000/tv.png"
+                        src="{{asset('/images/tv-r.png')}}"
                         alt="Movies and TV"
                     />
                     <img
                         class="filled-icon"
-                        src="https://img.icons8.com/fluency-systems-filled/30/1d6978/tv.png"
+                        src="{{asset('/images/tv-f.png')}}"
                         alt="Movies and TV"
                     />
                     <span class="nav-link-text">Movies & TV</span>
@@ -163,7 +163,7 @@
             <ul>
                 <li class="option1">
                     <img
-                        src="https://images-na.ssl-images-amazon.com/images/I/51LGj5--KsL.png"
+                        src="{{asset('/images/netflix.png')}}"
                         alt="Netflix"
                     />
                     <section class="suggestions-items-text">
@@ -173,7 +173,7 @@
                 </li>
                 <li class="option2">
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCyC4_C1ojg0N7_7s9ClG0vcKxuxa9dJfA_w89GHOHr45CSowxy-DFJsieI_K4eiRQFY&usqp=CAU"
+                        src="{{asset('/images/spotify.jpg')}}"
                         alt="Spotify"
                     />
                     <section class="suggestions-items-text">
@@ -183,7 +183,7 @@
                 </li>
                 <li class="option3">
                     <img
-                        src="https://im0-tub-com.yandex.net/i?id=ce2b17a0a86813175207cd9d86460748&n=13"
+                        src="{{asset('/images/pinterest.webp')}}"
                         alt="Pinterest"
                     />
                     <section class="suggestions-items-text">
@@ -193,7 +193,7 @@
                 </li>
                 <li class="option4">
                     <img
-                        src="data:image/png;base64,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"
+                        src="{{asset('/images/adobe.png')}}"
                         alt="Adobe Lightroom"
                     />
                     <section class="suggestions-items-text">
@@ -213,7 +213,7 @@
             <ul>
                 <li class="option1">
                     <img
-                        src="https://im0-tub-com.yandex.net/i?id=3997def387445ea2b2be78d3bf607104&n=13"
+                        src="{{asset('/images/asphalt.webp')}}"
                         alt="Asphalt 9"
                     />
                     <section class="suggestions-items-text">
@@ -223,7 +223,7 @@
                 </li>
                 <li class="option2">
                     <img
-                        src="https://statics.viralizalo.com/virs/2016/02/VIR_128500_10876_relaciona_personajes_de_gta_v.jpg?cb=7350"
+                        src="{{asset('/images/gtav.jpg')}}"
                         alt="GTA V"
                     />
                     <section class="suggestions-items-text">
@@ -233,7 +233,7 @@
                 </li>
                 <li class="option3">
                     <img
-                        src="https://im0-tub-com.yandex.net/i?id=9925a7066c2c37e2f1d59400aa39c228&n=13"
+                        src="{{asset('/images/ac.webp')}}"
                         alt="AC valhalla"
                     />
                     <section class="suggestions-items-text">
@@ -243,7 +243,7 @@
                 </li>
                 <li class="option4">
                     <img
-                        src="https://static.newmobilelife.com/wp-content/uploads/2018/04/God-of-War-1.jpg"
+                        src="{{asset('/images/gow.jpg')}}"
                         alt="God of war"
                     />
                     <section class="suggestions-items-text">
@@ -258,76 +258,22 @@
         <span class="title">Top free apps</span>
         <ul>
             <li>
-                <img
-                    src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                    alt="App Name"
-                />
-                <section>
-                    <h5 class="apps-name">App's name</h5>
-                    <span class="apps-category">Category</span>
-                </section>
-
-                <span class="price">Price</span>
+                <x-app-list/>
             </li>
             <li>
-                <img
-                    src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                    alt="App Name"
-                />
-                <section>
-                    <h5 class="apps-name">App's name</h5>
-                    <span class="apps-category">Category</span>
-                </section>
-
-                <span class="price">Price</span>
+                <x-app-list/>
             </li>
             <li>
-                <img
-                    src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                    alt="App Name"
-                />
-                <section>
-                    <h5 class="apps-name">App's name</h5>
-                    <span class="apps-category">Category</span>
-                </section>
-
-                <span class="price">Price</span>
+                <x-app-list/>
             </li>
             <li>
-                <img
-                    src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                    alt="App Name"
-                />
-                <section>
-                    <h5 class="apps-name">App's name</h5>
-                    <span class="apps-category">Category</span>
-                </section>
-
-                <span class="price">Price</span>
+                <x-app-list/>
             </li>
             <li>
-                <img
-                    src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                    alt="App Name"
-                />
-                <section>
-                    <h5 class="apps-name">App's name</h5>
-                    <span class="apps-category">Category</span>
-                </section>
-
-                <span class="price">Price</span>
+                <x-app-list/>
             </li>
             <li>
-                <img
-                    src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                    alt="App Name"
-                />
-                <section>
-                    <h5 class="apps-name">App's name</h5>
-                    <span class="apps-category">Category</span>
-                </section>
-
-                <span class="price">Price</span>
+                <x-app-list/>
             </li>
         </ul>
     </section>
@@ -336,100 +282,28 @@
         <div>
             <ul>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
                 <li>
-                    <img
-                        src="https://img.icons8.com/external-those-icons-lineal-those-icons/50/000000/external-app-applications-windows-those-icons-lineal-those-icons-5.png"
-                        alt="App Name"
-                    />
-                    <section>
-                        <h5 class="apps-name">App's name</h5>
-                        <span class="apps-category">Category</span>
-                    </section>
-
-                    <span class="price">Price</span>
+                    <x-app-list/>
                 </li>
             </ul>
         </div>

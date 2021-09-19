@@ -1,17 +1,19 @@
-const signUpBtn = document.querySelector("button");
-const formElement = document.querySelector("form");
-const url = "??????????????";
+const signUpBtn = document.querySelector("button")
+const formElement = document.querySelector("form")
+const url = "http://127.0.0.1:8000/register"
+formElement.addEventListener('submit',sendData)
+function sendData(e){
+    e.preventDefault();
+    const http = new XMLHttpRequest()
 
-signUpBtn.addEventListener("submit", eventHandler);
-function eventHandler() {
-  this.preventDefault();
-  const http = new XMLHttpRequest();
-  const formData = new FormData(formElement);
+    let data = {
+        name: 'amir',
+        last: 'kouchaki'
+    }
+    data = JSON.stringify(data)
 
-  http.onerror = () => {
-    alert("Something wrong happen !!!\nPlease try late.");
-  };
-
-  http.open("Post", url);
-  http.send(formData);
+    http.open("Post", url)
+    http.setRequestHeader('content-type','application/json')
+    http.setRequestHeader('X-CSRF-TOKEN',document.getElementById('csrf').getAttribute('content'))
+    http.send(data)
 }

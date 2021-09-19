@@ -6,6 +6,7 @@ signInBtn.addEventListener("submit", eventHandler);
 function eventHandler() {
   this.preventDefault();
   const http = new XMLHttpRequest();
+
   const formData = new formData(formElement);
 
   http.onerror = () => {
