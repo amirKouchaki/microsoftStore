@@ -24,8 +24,8 @@ class RegistrationTest extends TestCase
     public function test_new_users_can_register_with_default_profile_picture()
     {
         $response = $this->post('/register',$attributes = [
-            'first_name' => 'Test ',
-            'last_name' => 'User ',
+            'first_name' => 'Test',
+            'last_name' => 'User',
             'email' => 'test@example.com',
             'password' => 'password',
             'password_confirmation' => 'password',
@@ -33,7 +33,7 @@ class RegistrationTest extends TestCase
         $this->assertAuthenticated();
         unset($attributes['password_confirmation']);
         unset($attributes['password']);
-        $this->assertDatabaseHas('users',$attributes +['avatar' => 'images/users/avatars/defaults/def-pic.jpg']);
+        $this->assertDatabaseHas('users',$attributes +['avatar' => 'images/users/avatars/defaults/def-pic.png']);
         $response->assertRedirect(route('welcome'));
     }
     public function test_new_users_can_register_with_their_own_picture()
@@ -41,8 +41,8 @@ class RegistrationTest extends TestCase
         $this->withoutExceptionHandling();
         $file = UploadedFile::fake()->create('test.png', $kilobytes = 0);
         $response = $this->post('/register',$attributes = [
-            'first_name' => 'Test ',
-            'last_name' => 'User ',
+            'first_name' => 'Test',
+            'last_name' => 'User',
             'email' => 'test@example.com',
             'password' => 'password',
             'password_confirmation' => 'password',

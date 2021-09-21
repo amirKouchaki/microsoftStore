@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <title>Microsoft Store</title>
     <link rel="stylesheet" href="/css/css reset.css"/>
     <link rel="stylesheet" href="/css/index/style.css"/>
@@ -15,16 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
         rel="stylesheet"
     />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-
-
+    <!--end-->
 </head>
-<body class="antialiased">
-
+<body>
 <aside>
     <nav>
         <ul>
@@ -32,12 +24,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="{{asset('/images/home-r.png')}}"
+                        src="{{asset('images/home-r.png')}}"
                         alt="Home"
                     />
                     <img
                         class="filled-icon"
-                        src="{{asset('/images/home-f.png')}}"
+                        src="{{asset('images/home-f.png')}}"
                         alt="Home"
                     />
                     <span class="nav-link-text">Home</span>
@@ -47,12 +39,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="{{asset('/images/apps-r.png')}}"
+                        src="{{asset('images/apps-r.png')}}"
                         alt="Apps"
                     />
                     <img
                         class="filled-icon"
-                        src="{{asset('/images/apps-f.png')}}"
+                        src="{{asset('images/apps-f.png')}}"
                         alt="Apps"
                     />
                     <span class="nav-link-text">Apps</span>
@@ -62,12 +54,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="{{asset('/images/controller-r.png')}}"
+                        src="{{asset('images/controller-r.png')}}"
                         alt="Gaming"
                     />
                     <img
                         class="filled-icon"
-                        src="{{asset('/images/controller-f.png')}}"
+                        src="{{asset('images/controller-f.png')}}"
                         alt="Gaming"
                     />
                     <span class="nav-link-text">Gaming</span>
@@ -77,12 +69,12 @@
                 <span class="border"></span>
                 <div>
                     <img
-                        src="{{asset('/images/tv-r.png')}}"
+                        src="{{asset('images/tv-r.png')}}"
                         alt="Movies and TV"
                     />
                     <img
                         class="filled-icon"
-                        src="{{asset('/images/tv-f.png')}}"
+                        src="{{asset('images/tv-f.png')}}"
                         alt="Movies and TV"
                     />
                     <span class="nav-link-text">Movies & TV</span>
@@ -90,24 +82,55 @@
             </li>
         </ul>
     </nav>
+
+    <label for="check-for-drop-down" id="user-info">
+        @guest
+            <a href="{{route('login')}}">
+
+                <!-- Ignore input below -->
+                <input hidden type="checkbox" id="check-for-drop-down"/>
+                <img
+                    src="{{asset('storage/images/users/avatars/defaults/def-pic.png')}}"
+                    alt="Username"
+                />
+            </a>
+        @endguest
+        @auth
+                <input hidden type="checkbox" id="check-for-drop-down"/>
+                <img
+                    src="{{asset('storage/'.auth()->user()->avatar)}}"
+                    alt="Username"
+                />
+            <div id="drop-down">
+                <section id="user-data">
+                    <img
+                        src="{{asset('storage/'.auth()->user()->avatar)}}"
+                        alt="Username"
+                    />
+                    <section>
+                        <span>{{auth()->user()->first_name}}</span> <span>{{auth()->user()->last_name}}</span>
+                        <span id="username">{{auth()->user()->email}}</span>
+                    </section>
+                </section>
+                <ul>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Setting</a></li>
+                    <li><a href="">Downloaded</a></li>
+                    <li><a href="">Updates</a></li>
+                    <li>
+                        <form id="form-id" action="{{route('logout')}}" method="POST">
+                            @csrf
+                            <a href="#" onclick="document.getElementById('form-id').submit();">Log out</a>
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+        @endauth
+    </label>
+
 </aside>
 <article id="container">
-    <div >
-    @if (Route::has('login'))
-        <div class="hidden  px-6 py-4 sm:block right-0">
-            @auth
-                <a href="{{ url('/dashboard') }}"
-                   class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-            @else
-                <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                @endif
-            @endauth
-        </div>
-    @endif
-    </div>
     <span id="nav-selected-item"></span>
     <div id="slider-container">
         <div id="slider">
@@ -163,7 +186,7 @@
             <ul>
                 <li class="option1">
                     <img
-                        src="{{asset('/images/netflix.png')}}"
+                        src="{{asset('images/netflix.png')}}"
                         alt="Netflix"
                     />
                     <section class="suggestions-items-text">
@@ -173,7 +196,7 @@
                 </li>
                 <li class="option2">
                     <img
-                        src="{{asset('/images/spotify.jpg')}}"
+                        src="{{asset('images/spotify.jpg')}}"
                         alt="Spotify"
                     />
                     <section class="suggestions-items-text">
@@ -183,7 +206,7 @@
                 </li>
                 <li class="option3">
                     <img
-                        src="{{asset('/images/pinterest.webp')}}"
+                        src="{{asset('images/pinterest.webp')}}"
                         alt="Pinterest"
                     />
                     <section class="suggestions-items-text">
@@ -193,7 +216,7 @@
                 </li>
                 <li class="option4">
                     <img
-                        src="{{asset('/images/adobe.png')}}"
+                        src="{{asset('images/adobe.png')}}"
                         alt="Adobe Lightroom"
                     />
                     <section class="suggestions-items-text">
@@ -213,7 +236,7 @@
             <ul>
                 <li class="option1">
                     <img
-                        src="{{asset('/images/asphalt.webp')}}"
+                        src="{{asset('images/asphalt.webp')}}"
                         alt="Asphalt 9"
                     />
                     <section class="suggestions-items-text">
@@ -223,7 +246,7 @@
                 </li>
                 <li class="option2">
                     <img
-                        src="{{asset('/images/gtav.jpg')}}"
+                        src="{{asset('images/gtav.jpg')}}"
                         alt="GTA V"
                     />
                     <section class="suggestions-items-text">
@@ -233,7 +256,7 @@
                 </li>
                 <li class="option3">
                     <img
-                        src="{{asset('/images/ac.webp')}}"
+                        src="{{asset('images/ac.webp')}}"
                         alt="AC valhalla"
                     />
                     <section class="suggestions-items-text">
@@ -243,7 +266,7 @@
                 </li>
                 <li class="option4">
                     <img
-                        src="{{asset('/images/gow.jpg')}}"
+                        src="{{asset('images/gow.jpg')}}"
                         alt="God of war"
                     />
                     <section class="suggestions-items-text">
@@ -257,54 +280,26 @@
     <section id="top-free-apps">
         <span class="title">Top free apps</span>
         <ul>
-            <li>
-                <x-app-list/>
-            </li>
-            <li>
-                <x-app-list/>
-            </li>
-            <li>
-                <x-app-list/>
-            </li>
-            <li>
-                <x-app-list/>
-            </li>
-            <li>
-                <x-app-list/>
-            </li>
-            <li>
-                <x-app-list/>
-            </li>
+            <x-app-list/>
+            <x-app-list/>
+            <x-app-list/>
+            <x-app-list/>
+            <x-app-list/>
+            <x-app-list/>
         </ul>
     </section>
     <section id="trending">
         <span class="title">Trending</span>
         <div>
             <ul>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
-                <li>
-                    <x-app-list/>
-                </li>
+                <x-app-list/>
+                <x-app-list/>
+                <x-app-list/>
+                <x-app-list/>
+                <x-app-list/>
+                <x-app-list/>
+                <x-app-list/>
+                <x-app-list/>
             </ul>
         </div>
     </section>
@@ -336,7 +331,7 @@
         </ul>
     </section>
 </article>
-
 </body>
+
 <script src="/js/index/script.js"></script>
 </html>
