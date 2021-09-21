@@ -91,7 +91,7 @@
         </ul>
     </nav>
 </aside>
-<article id="container relative">
+<article id="container">
     <div >
     @if (Route::has('login'))
         <div class="hidden  px-6 py-4 sm:block right-0">
